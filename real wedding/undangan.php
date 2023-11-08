@@ -57,8 +57,7 @@ session_start();
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.php"><img src="images/logo.jpg" alt="image" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
-                    aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -93,8 +92,7 @@ session_start();
         <div class="container-fluid">
             <div class="row">
                 <div class="pogoSlider" id="js-main-slider">
-                    <div class="pogoSlider-slide" data-transition="zipReveal" data-duration="1500"
-                        style="background-image: url(images/slider-01.jpg)">
+                    <div class="pogoSlider-slide" data-transition="zipReveal" data-duration="1500" style="background-image: url(images/slider-01.jpg)">
                         <div class="lbox-caption">
                             <div class="lbox-details">
                                 <img src="images/ornaments.png" alt="">
@@ -105,8 +103,7 @@ session_start();
                             </div>
                         </div>
                     </div>
-                    <div class="pogoSlider-slide" data-transition="blocksReveal" data-duration="1500"
-                        style="background-image: url(images/slider-02.jpg)">
+                    <div class="pogoSlider-slide" data-transition="blocksReveal" data-duration="1500" style="background-image: url(images/slider-02.jpg)">
                         <div class="lbox-caption">
                             <div class="lbox-details">
                                 <img src="images/ornaments.png" alt="">
@@ -117,8 +114,7 @@ session_start();
                             </div>
                         </div>
                     </div>
-                    <div class="pogoSlider-slide" data-transition="shrinkReveal" data-duration="2000"
-                        style="background-image: url(images/slider-03.jpg)">
+                    <div class="pogoSlider-slide" data-transition="shrinkReveal" data-duration="2000" style="background-image: url(images/slider-03.jpg)">
                         <div class="lbox-caption">
                             <div class="lbox-details">
                                 <img src="images/ornaments.png" alt="">
@@ -460,8 +456,7 @@ session_start();
                             Lorem Ipsum is simply dummy text of the printing and typesetting
                             industry. Lorem Ipsum has been the industry's standard
                         </p>
-                        <a href="https://maps.app.goo.gl/VKUnWurCb1bbVcTa9" target="_blank"><img
-                                src="images/googlemaps.jpg" alt=""></a>
+                        <a href="https://maps.app.goo.gl/VKUnWurCb1bbVcTa9" target="_blank"><img src="images/googlemaps.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -474,8 +469,7 @@ session_start();
                             Lorem Ipsum is simply dummy text of the printing and typesetting
                             industry. Lorem Ipsum has been the industry's standard
                         </p>
-                        <a href="https://maps.app.goo.gl/VKUnWurCb1bbVcTa9" target="_blank"><img
-                                src="images/googlemaps.jpg" alt=""></a>
+                        <a href="https://maps.app.goo.gl/VKUnWurCb1bbVcTa9" target="_blank"><img src="images/googlemaps.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -488,8 +482,7 @@ session_start();
                             Lorem Ipsum is simply dummy text of the printing and typesetting
                             industry. Lorem Ipsum has been the industry's standard
                         </p>
-                        <a href="https://maps.app.goo.gl/VKUnWurCb1bbVcTa9" target="_blank"><img
-                                src="images/googlemaps.jpg" alt=""></a>
+                        <a href="https://maps.app.goo.gl/VKUnWurCb1bbVcTa9" target="_blank"><img src="images/googlemaps.jpg" alt=""></a>
 
 
                     </div>
@@ -520,21 +513,19 @@ session_start();
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
                     <div class="contact-block">
-                        <form action="tambah.php" method="POST">
+                        <form id="myForm">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="nama" placeholder="Nama"
-                                            required data-error="Please enter your name">
+                                        <input type="text" class="form-control" id="name" name="nama" placeholder="Nama" required data-error="Please enter your name">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <select class="custom-select d-block form-control" name="konfirmasi" id="event"
-                                            required data-error="Please select an item in the list.">
-                                            <option disabled selected>Konfirmasi Kehadiran</option>
+                                        <select class="custom-select d-block form-control" name="konfirmasi" id="event" required data-error="Please select an item in the list.">
+                                            <option disabled selected value="">Konfirmasi Kehadiran</option>
                                             <option value="Semua Acara">Semua Acara</option>
                                             <option value="Pemberkatan">Pemberkatan</option>
                                             <option value="Resepsi Pernikahan">Resepsi Pernikahan</option>
@@ -542,15 +533,17 @@ session_start();
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
+
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="message" name="ucapan" placeholder="Ucapan"
-                                            rows="8" data-error="Write your message" required></textarea>
+                                        <textarea class="form-control" id="message" name="ucapan" placeholder="Ucapan" rows="8" required data-error="Write your message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
+                                </div>
+
+                                <div class="col-md-12">
                                     <div class="submit-button text-center">
-                                        <button class="btn btn-primary" name="tComments" onclick="contoh()"
-                                            type="submit">Kirim</button>
+                                        <button class="btn btn-primary" name="tComments" type="submit">Kirim</button>
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="clearfix"></div>
                                     </div>
@@ -562,26 +555,6 @@ session_start();
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-    function contoh() {
-
-        swal({
-
-            title: "Berhasil!",
-
-            text: "Pop-up berhasil ditampilkan",
-
-            icon: "success",
-
-            button: true
-
-        });
-
-    }
-    </script>
-
-
 
     <!-- End Contact -->
 
@@ -623,25 +596,70 @@ session_start();
     <script src="js/sweetalert2.all.min.js"></script>
     <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
+    <script type="text/javascript">
+        $('#myForm').on('submit', function(e) {
+            e.preventDefault()
+
+            console.log('payload', $(this).serialize())
+
+            $.ajax({
+                url: 'tambah.php',
+                type: 'post',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 1) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success!',
+                            text: 'Form submitted successfully.',
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error!',
+                            text: 'Form submission failed. Please try again.',
+                        });
+                    }
+
+                    $('#name').val('');
+                    $('#event').val('');
+                    $('#message').val('');
+                },
+                error: (xhr, status, error) => {
+                    console.error('Error:', error);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error!',
+                        text: 'Something went wrong. Please try again later.',
+                    });
+
+                    $('#name').val('');
+                    $('#event').val('');
+                    $('#message').val('');
+                }
+            })
+        })
+    </script>
 
     <script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+        var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
-    simplyCountdown('.simply-countdown-one', {
-        year: 2023,
-        month: 10,
-        day: 28,
-        hours: 9,
-        minutes: 30,
-        seconds: 0,
-    });
+        simplyCountdown('.simply-countdown-one', {
+            year: 2023,
+            month: 10,
+            day: 28,
+            hours: 9,
+            minutes: 30,
+            seconds: 0,
+        });
 
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
+        $('#simply-countdown-losange').simplyCountdown({
+            year: d.getFullYear(),
+            month: d.getMonth() + 1,
+            day: d.getDate(),
+            enableUtc: false
+        });
     </script>
 
 </body>
